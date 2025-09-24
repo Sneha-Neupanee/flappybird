@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy Burst</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="app">
+    <canvas id="game" width="480" height="720"></canvas>
+
+    <div class="hud">
+      <div class="logo">
+        <span class="bubble">Flappy</span>
+        <span class="bubble burst">Burst</span>
+      </div>
+      <div class="controls">
+        <button id="btnStart" class="btn primary">Start</button>
+        <button id="btnPause" class="btn">Pause</button>
+        <button id="btnReset" class="btn">Reset</button>
+      </div>
+      <div class="tips">
+        <p>Click / Tap / Space to flap. P to pause. M to mute.</p>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="overlay">
+      <div class="card">
+        <h1 id="title">Get Ready</h1>
+        <p id="subtitle">Tap to start</p>
+        <div class="scores">
+          <div class="score-item"><span>Score</span><b id="score">0</b></div>
+          <div class="score-item"><span>Best</span><b id="best">0</b></div>
+        </div>
+        <button id="btnPlay" class="btn primary large">Play</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
